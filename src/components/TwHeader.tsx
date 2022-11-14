@@ -83,7 +83,7 @@ const Header = ({ hideLocationPicker }: HeaderProps) => {
               <a className="text-white font-semibold text-1xl" href="/homePage">
                 Menus
               </a>
-              <a className="text-white font-semibold text-1xl" href="/location-search">
+              <a className="text-white font-semibold text-1xl" href="/locations">
                 Restaurants
               </a>
 
