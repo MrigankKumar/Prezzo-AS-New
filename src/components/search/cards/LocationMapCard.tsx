@@ -46,7 +46,7 @@ const LocationMapCard: CardComponent<Location> = ({
         </p>
         <a
           // target="_blank"
-          href={`location/${slug}`}
+          href={`${slug}`}
           className="text-blue-700 text-xs hover:underline"
           rel="noreferrer"
         >
