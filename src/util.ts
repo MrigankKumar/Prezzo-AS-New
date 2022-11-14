@@ -20,7 +20,7 @@ export const setPathAndQueryParams = (
     // history.pushState(null, "", `${path ?? ""}?` + queryParams.toString());
     window.location.href = `/Search?query=${value}`;
   } else if(pathname.includes("/home")){
-    window.location.href = `/Search?query=${value}`;
+    window.location.href = `/?query=${value}`;
   }
 };
 
