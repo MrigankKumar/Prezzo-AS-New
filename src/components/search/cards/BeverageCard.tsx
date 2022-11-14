@@ -57,7 +57,7 @@ export const BeverageCard = ({
           </div>
         )}
         <div>
-        <img src={menuItems.photoGallery[0].image.url} height="100px" width="220px"></img>
+        <img src={menuItems.photoGallery ? menuItems.photoGallery[0].image.url : null} height="100px" width="220px"></img>
           <div
             className={classNames("flex flex-col justify-start pb-2", {
               "h-20 pb-0": !autocomplete,
@@ -65,7 +65,7 @@ export const BeverageCard = ({
           >
             <p className="text-black text-2xl text-medium line-clamp-2">{beverage.name}</p>
             <p className="text-black line-clamp-2">{menuItems.c_foodType}</p>
-            <p className="text-black line-clamp-2">{menuItems.price.currencyCode} {menuItems.price.value}</p>
+            {/*<p className="text-black line-clamp-2">{menuItems.price.currencyCode} {menuItems.price.value}</p>*/}
           </div>
           {/* {priceRange &&
             priceRange.min < Number.MAX_SAFE_INTEGER &&

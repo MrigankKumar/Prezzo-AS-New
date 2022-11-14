@@ -54,8 +54,7 @@ const Search: Template<TemplateRenderProps> = ({ document }) => {
   // const coverPhoto = site.c_coverPhotos?.find(
     // (photo) => photo.name === "Home"
   // )?.photo;
-
-  return (
+return (
     <PageLayout>
       <SearchLayout
         // coverPhoto={coverPhoto}
@@ -68,6 +67,7 @@ const Search: Template<TemplateRenderProps> = ({ document }) => {
     </PageLayout>
     
   );
+
 };
 
 export default Search;

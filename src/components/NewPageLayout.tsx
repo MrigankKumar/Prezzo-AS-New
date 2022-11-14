@@ -14,7 +14,7 @@ type Props = {
   hideLocationPicker?: boolean;
 };
 
-const PageLayout = ({
+const NewPageLayout = ({
   children,
   header = true,
   containerCss,
@@ -23,7 +23,7 @@ const PageLayout = ({
 }: Props) => {
   return (
   <>
-    <SearchExperience verticalKey={verticalKey}>
+    <NewSearchExperience verticalKey={verticalKey}>
       <AppProvider>
         <div className="min-h-screen font-primary">
           {header && <Header hideLocationPicker={hideLocationPicker} />}
@@ -38,11 +38,11 @@ const PageLayout = ({
           </div>
         </div>
       </AppProvider>
-    </SearchExperience>
+    </NewSearchExperience>
     
   </>
 
   );
 };
 
-export default PageLayout;
+export default NewPageLayout;
