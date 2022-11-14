@@ -29,7 +29,7 @@ export const BeverageCard = ({
   // );
 
   return (
-    <a href={`menuItems/${beverage.slug}`}>
+    <a href={`${beverage.slug}`}>
       <div
         className={classNames("flex py-4 px-4 ", {
           "hover:bg-gray-200": autocomplete,
