@@ -15,13 +15,13 @@ const solutions = [
     name: "Menus",
     description:
       "Get a better understanding of where your traffic is coming from.",
-    href: "/home",
+    href: "/homePage",
     // icon: ChartBarIcon,
   },
   {
     name: "Restaurants",
     description: "Speak directly to your customers in a more meaningful way.",
-    href: "/location-search",
+    href: "/locations",
     // icon: CursorArrowRaysIcon,
   },
   {
@@ -75,23 +75,18 @@ const Header = ({ hideLocationPicker }: HeaderProps) => {
             </Popover.Button>
           </div>
           <div className="flex items-center space-x-8">
-            <a className="flex" href="/Search">
+            <a className="flex" href="/index.html">
               <span className="sr-only">Prezzo</span>
               <p className="text-3xl font-semibold text-white md:block">Prezzo</p>
             </a>
             <div className="hidden space-x-6 md:flex">
-              <a className="text-white font-semibold text-1xl" href="/home">
+              <a className="text-white font-semibold text-1xl" href="/homePage">
                 Menus
               </a>
               <a className="text-white font-semibold text-1xl" href="/location-search">
                 Restaurants
               </a>
-              <a className="text-white font-semibold text-1xl" href="/offers">
-                Offers
-              </a>
-              <a className="text-white font-semibold text-1xl" href="/faqs">
-                FAQs
-              </a>
+
             </div>
             <div className="z-50 hidden w-full lg:flex">
               <SearchBar customCssClasses={{ searchBarContainer: "mb-0" }} />
